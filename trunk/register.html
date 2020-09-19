@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="./css/common.css">
+    
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div id="header" class="clearfix">
+        <!-- 顶部 -->
+        <div class="top clear cfff">
+            <!-- 版心 -->
+            <div class="container">
+                <img src="./images/06-注册_02.png" alt="" class="fl bgcf60">
+                <a href="#">legouchina.cn</a>
+                <div class="fr loginbox">欢迎光临<a href="#">乐购</a>，请<span><a href="login.html">登陆</a></span>\<a href="register.html">注册</a>
+                </div>
+                <div class="title clearfix">
+                    <p class="c666 fs30 fl">欢迎登陆</p>
+                    <div class="title-dl ca6 fs24 fr">已有账号，请 <a href="login.html">登陆</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容 -->
+    <div id="content">
+        <div class="container tac">
+        <form action="#" method="post" id="signupForm">
+            <p>
+              <b for="username">用户名</b>
+              <input id="username" name="username" type="text" placeholder="您的账户名和登录名"> 
+              <span id="nameMsgBox"></span>
+              <img class="delImg" src="./images/delete.png" style="width: 20px;height: 20px;">
+            </p>
+            <p>
+              <b for="password">设置密码</b>
+              <input id="password" name="password" type="password" placeholder="建议设置两种字符密码">
+              <span id="pwdMsgBox"></span>
+              <img class="eyeImg" src="./images/close.png" style="width: 20px;height: 20px;">
+            </p>
+            <p>
+              <b for="confirm_password">确认密码</b>
+              <input id="confirm_password" name="confirm_password" type="password"  placeholder="再次输入密码">
+              <span id="pwdMsgBox"></span>
+              <img class="eyeImg" src="./images/close.png" style="width: 20px;height: 20px;">
+            </p>
+            <p>
+              <b for="tel">中国+86</b>
+              <input id="tel" name="tel" type="text" placeholder="建议使用常用手机号">
+              <span id="nameMsgBox"></span>
+              <img class="delImg" src="./images/delete.png" style="width: 20px;height: 20px;">
+            </p>
+            <p>
+                <b for="verification">验证码</b>
+                <input id="verification" name="verification" type="text" placeholder="请输入验证码" >
+                <i>W8GA</i>
+            </p>
+              <p>
+                <b for="phone_code">手机验证码</b>
+                <input id="phone_code" name="phone_code" type="text" placeholder="输入手机验证码">
+                <em><a href="#" class="c3">获取验证码</a> </em>
+            </p>
+            <p>
+                <input type="checkbox"  id="checkbox" name="agree" style="width: 12px;height: 12px;">
+            <span>我已阅读并同意<a href="#" class="cf60">《京东用户注册协议》</a></span>
+            </p>
+              <p>
+                <input class="submit cfff bgcf60 " type="submit" value="立即注册" style="text-indent: 0;">
+              </p>
+        </form>
+    </div></div>
+    <div class="xian"></div>
+    <!-- 页脚 -->
+    <section id="footer" class="container tac">
+        <div class="mt40 clearfix">
+            <ul class="fl">
+                <li><a href="#">公司简介</a></li>
+                <li>|</li>
+                <li><a href="#">Investor Relations</a></li>
+                <li>|</li>
+                <li><a href="#">网站联盟</a></li>
+                <li>|</li>
+                <li><a href="#">乐购招商</a></li>
+                <li>|</li>
+                <li><a href="#">机构销售</a></li>
+                <li>|</li>
+                <li><a href="#">手机乐购</a></li>
+                <li>|</li>
+                <li><a href="#">官方Blog</a></li>
+                <li>|</li>
+                <li><a href="#">热词搜索</a></li>
+            </ul>
+        </div>
+        <div class="copyright container tac  mb40">
+            <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
+        </div>
+    </section>
+    <!-- 1. 引入jQuery -->
+    <script src="./lib/jquery.min.js"></script>
+
+    <!-- 2. 引入轮播插件 -->
+    <script src="./lib/jquery.slidebox.js"></script>
+    <script src="./js/jquery.validate.js"></script>
+
+    <!-- 4. 引入当前页面js文件 -->
+    <script src="./js/register.js"></script>
+    <script src="./js/slide.fn.js"></script>
+</body>
+
+</html>

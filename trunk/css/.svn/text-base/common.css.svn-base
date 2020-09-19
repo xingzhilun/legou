@@ -1,0 +1,127 @@
+@charset 'utf-8';
+body {
+    font-size: 14px;
+    font-family: SimHei;
+    color: #333333;
+}
+/* 版心 */
+.container{
+    width: 1200px;
+    margin:0 auto;
+}
+/* 设置浮动 */
+.fl{
+    float:left;
+}
+.fr{
+    float:right;
+}
+
+/* 清除浮动 */
+.clear{
+    clear: both;
+}
+
+.clearfix:after{
+    content:'';
+    display: block;
+    height:0;
+    clear: both;
+    zoom: 1;
+}
+
+/* backgroundcolor */
+.bgcf60{
+    background-color: #ff6600;
+}
+.bgcfff{
+    background-color: #ffffff;
+}
+
+/* color */
+.cfff{
+    color: #fff;
+}
+.c3 {
+    color: #333333;
+}
+.c80 {
+    color: #808080;
+}
+.cf4 {
+    color: #f4290d;
+}
+.cf60 {
+    color: #ff6600;
+}
+.c4d {
+    color: #4d4d4d;
+}
+.cred {
+    color: red;
+}
+.c666 {
+    color: #666666;
+}
+.ca6 {
+    color: #a6a6a6;
+}
+/* font-size */
+
+.fs12{
+    font-size: 12px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs16{
+    font-size: 16px;
+}
+.fs18{
+    font-size: 18px;
+}
+.fs20{
+    font-size: 20px;
+}
+.fs24 {
+    font-size: 24px;
+}
+.fs28 {
+    font-size: 28px;
+}
+.fs30 {
+    font-size: 30px;
+}
+.ti10 {
+    text-indent: 10px;
+}
+.tac{
+    text-align: center;
+}
+
+/* margin */
+
+.mt40 {
+    margin: 40px;
+}
+.mb5 {
+    margin-bottom: 5px;
+}
+.mb40 {
+    margin-bottom: 40px;
+}
+.mr10 {
+    margin-right: 10px;
+}
+.mt20 {
+    margin-top: 20px;
+}
+.ml30 {
+    margin-left: 30px;
+}
+.mr30 {
+    margin: 30px;
+}
+.pdl22 {
+    padding-left: 22px;
+}

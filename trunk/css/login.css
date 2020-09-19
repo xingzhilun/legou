@@ -1,0 +1,169 @@
+#header {
+    height: 105px;
+}
+#header .top {
+    height: 28px;
+    background-color: #101010;
+    line-height: 20px;
+    text-indent: 5px;
+}
+
+#header .top a {
+    color: #e6e6e6;
+}
+#header .top .loginbox {
+    color: #bfbfbf;
+}
+#header .top .loginbox a{
+    color:#ff6600;
+}
+#header .top p {
+    line-height: 30px;
+    margin: 25px 0 30px 0;
+    text-indent: 22px;
+}
+#header .top .title {
+    height: 77px;
+}
+#header .top .title-dl {
+    margin: 45px 30px 15px 0;
+}
+#header .top .title-dl a{
+    color: #666666;
+}
+
+/* 内容 */
+#loginBox>p{
+    line-height: 35px;
+    height: 50px;
+}
+#loginBox{
+    width: 100%;
+    height: 500px;
+    background: url(../images/背景11.jpg)no-repeat;
+}
+#loginBox .btn>p{
+    font-size: 20px;
+}
+#loginBox .btn>p.active{
+    color: #f60;
+    font-weight: bold;
+}
+#loginBox .box-list{
+    margin-top: 80px;
+}
+#loginBox .login-tabList .list{
+    display: none;
+}
+#loginBox>div>div{
+    position: relative;
+}
+#loginBox .Sign{
+    width: 350px;
+    height: 370px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 100px;
+}
+#loginBox  .Sign>div>p{
+    width: 175px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+#loginBox .loginBtn>p:first-child,p:nth-child(2){
+    text-align: center;
+}
+#loginBox .loginBtn>p:nth-child(4){
+    width: 350px;
+    text-align: center;
+}
+#loginBox .loginBtn>p:nth-child(4)>input{
+    width: 290px;
+    height: 40px;
+    color: #fff;
+    background: orangered;
+    border: none;
+    font-size: 18px;
+    
+}
+#loginBox .loginBtn>p:last-child{
+    width: 350px;
+    background: rgb(252, 252, 252);
+    height: 50px;
+    margin-top: 43px;
+    text-align: center;
+    line-height: 50px;
+    border-top: 1px solid #ccc;
+}
+#loginBox .loginBtn>p:last-child>a{
+    color: orangered;
+    background: url(../images/去往注册.png)no-repeat 0px -1px;
+    padding-left: 20px;
+    line-height: 50px;
+}
+#loginBox .loginBtn>p:first-child>input{
+    width: 280px;
+    height: 40px;
+    padding-left: 10px;
+}
+#loginBox .loginBtn>p:nth-child(2)>input{
+    width: 280px;
+    height: 40px;
+    padding-left: 10px;
+}
+#loginbox p{
+    margin-bottom: 40px;
+    font-size: 14px;
+}
+#loginbox #myform p {
+    position: relative;
+
+}
+.delImg{
+    position: absolute;
+    right: 35px;
+    top: 82px;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+.eyeImg{
+    position: absolute;
+    right: 35px;
+    top: 156px;
+    width: 20px;
+    height: 20px;
+    display: none;
+}
+
+#nameMsgBox {
+    position: absolute;
+    right: 200px;
+    top: 116px;
+}
+#pwdMsgBox {
+    position: absolute;
+    right: 210px;
+    top: 188px;
+}
+/* 页脚 */
+#footer {
+    width: 900px;
+    margin: auto;
+}
+#footer ul li {
+    text-align: center;
+}
+#footer ul li a{
+    color: #333333;
+}
+#footer div ul li{
+    float: left;
+    margin-left: 15px;
+}
+#footer .copyright {
+    width: 357px;
+}
