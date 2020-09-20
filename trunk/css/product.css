@@ -132,7 +132,11 @@
     width: 1200px;
     z-index: 100;
 }
-/* 独家提供 */
+/* 图书 */
+#sole .lg{
+    width: 1200px;
+    border-bottom: 6px solid #f60;
+}
 #sole .lg div{
     width: 170px;
     height: 47px;
@@ -155,12 +159,12 @@
 #sole .list li>p:first-child{
     text-align: center;
 }
-/* #sole .list li:hover{
+#sole .list li:hover{
     background: #ccc;
     position: relative;
     bottom: 5px;
     box-shadow: 15px 15px 10px  rgb(128, 128, 128);
-} */
+}
 
 /* 新书上架 */
 /* 左边盒子 */
@@ -183,7 +187,7 @@
     line-height: 40px;
     height: 40px;
 }
-#newBook .bookLeft ul{
+#newBook .bookLeft div{
     border: 1px solid #ccc;
 }
 #newBook .bookLeft ul li{
@@ -195,12 +199,12 @@
     padding-top: 10px;
     color: #909090;
 }
-/* #newBook .bookLeft ul li:hover{
+#newBook .bookLeft ul li:hover{
     background: #ccc;
     position: relative;
     top: 10px;
     box-shadow: 15px 15px 10px rgb(128, 128, 128);
-} */
+}
 #newBook .bookLeft ul li p{
     text-indent: 10px;
     float: left;
@@ -211,7 +215,7 @@
 /* 右边盒子 */
 #newBook .bookRight{
     width: 280px;
-    height: 510px;
+    height: 498px;
     border: 1px solid #ccc;
     margin-top: 40px;
 }

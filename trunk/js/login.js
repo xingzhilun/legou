@@ -1,14 +1,19 @@
-// 文档加载事件
-$(function (){
-    $('.btn p').click(function (){
-        // 选中元素所展示的激活样式
-        $(this).addClass('active').siblings().removeClass('active')
-        // 展示相应的内容
-        let index = $(this).index()
-        $('.list').hide().eq(index).show()
-    })
-  
+// 扫码登陆
+let sm = document.querySelector('.sm');
+let zh = document.querySelector('.zh');
+let loginTabList = document.querySelector('.login-tabList');
+let myform = document.querySelector('#myform')
+// console.log(myform);
+sm.addEventListener('click',function(){
+    loginTabList.style.display = 'block';
+    myform.style.display = 'none';
 })
+zh.addEventListener('click',function(){
+    myform.style.display = 'block';
+    loginTabList.style.display = 'none';
+})
+
+
 
 let loginBtn = document.querySelector('#loginBox');
 let username = document.querySelector('#username');
@@ -19,7 +24,6 @@ let nameMsgBox = document.querySelector('#nameMsgBox');
 let pwdMsgBox = document.querySelector('#pwdMsgBox');
 let loginbox = document.getElementById('loginbox')
 console.log(loginBtn);
-// let myform = document.querySelector("#myform")
     let flagObj = {
         userflag:false,
         pwdflag:false

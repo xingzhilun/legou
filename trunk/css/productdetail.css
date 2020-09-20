@@ -89,6 +89,18 @@
     height: 569px;
     background-color: #f2f2f2;
 }
+/* 左盒子 */
+
+#books div:nth-child(2)>.magnifier {
+    width: 360px;
+    height: 470px;
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+}
+/* 右盒子 */
+#books .rightBox {
+    width: 820px;
+}
 #books .rightBox p {
     line-height: 40px;
 
@@ -111,9 +123,50 @@
     right: 10px;
     padding-left: 10px; 
 }
-#books .rightBox .item a{
-    border: 1px solid #ccc;
+#books .rightBox .summary .coupon {
+    width: 250px;
+    height: 25px;
 }
+
+#books .rightBox .summary .coupon span {
+    float: left;
+}
+#books .rightBox .summary .coupon span:first-child {
+    line-height: 25px;
+}
+#books .rightBox .summary .coupon a {
+    float: left;
+    text-indent: 0;
+    width: 64px;
+    height: 26px;
+    background: url(../images/优惠券.png)no-repeat;
+    background-size: 94px 26px;
+    line-height: 26px;
+    color: #fff;
+    margin-right: 15px;
+}
+
+
+#books .rightBox .item {
+    line-height: 30px;
+    text-indent: 0;
+}
+#books .rightBox .item span {
+    float: left;
+}
+#books .rightBox .item a {
+    float: left;
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+#books .rightBox .item>a.active {
+    border: 1px solid #f60;
+    background: url(../images/select.png)no-repeat right bottom;
+}
+
 #books .rightBox .prductRight-box input {
     width: 40px;
     height: 40px;
@@ -122,6 +175,7 @@
 }
 #books .rightBox .prductRight-box span {
     cursor: pointer;
+    text-indent: 0;
     width: 22px;
     height: 20px;
     background: #f2f2f2;
@@ -145,16 +199,21 @@
     cursor: pointer;
     margin-top: -7px;
     margin-left: 87px;
+    text-indent: 0;
 }
 
 /* 人气单品 */
+#sole .lg{
+    width: 1200px;
+    border-bottom: 6px solid #f60;
+}
 #sole .lg div{
-    width: 170px;
-    height: 47px;
+    width: 124px;
+	height: 47px;
+	background-color: #ff6600;
     text-align: center;
     line-height: 47px;
     color: #fff;
-    
 }
 
 #sole .list .buling img{
@@ -162,6 +221,7 @@
     height: 18px;
 }
 #sole .list li{
+    margin-top: 10px;
     float: left;
     width: 240px;
     padding-top: 5px;
@@ -183,40 +243,46 @@
     width: 316px;
 	height: 2212px;
     border: solid 1px #e6e6e6;
-    text-align: center;
+}
+#sole .leftbox li {
+    padding-top: 20px;
+    float: left;
+    width: 214px;
+    height: 280px;
+    border-bottom: 1px solid #e6e6e6;
+    margin-left: 12px;
+    padding-left: 78px;
+}
+#sole .leftbox li:last-child {
+    border: 0;
 }
 #sole .leftbox h3 {
     width: 316px;
 	height: 40px;
-	background-color: #f4f4f4;
+    background-color: #f4f4f4;
+    line-height: 40px;
 }
 /* 右盒子 */
-#sole .rightbox {
-    width: 856px;
-    height: 2060px;
-    border: 1px solid red;
+#sole .introdright{
+    width: 870px;
 }
-#sole .rightbox .title {
+#sole .introdright>div:first-child{
     border-bottom: 6px solid #f60;
 }
-#sole .rightbox ul li{
-    /* float: left; */
+#sole .introdright>div:first-child>h4{
     width: 150px;
     height: 47px;
     cursor: pointer;
+    line-height: 47px;
     text-align: center;
-    line-height: 40px;
+    font-size: 24px;
 }
-#sole .rightbox ul>li.active{
+#sole .introdright>div:first-child>h4.active{
     background: #f60;
     color: #fff;
 }
 /* 评价 */
-/* #sole .rightbox .content p:first-child>span{
-    width: 146px;
-	height: 16px;
-	background-color: #f8380c;
-} */
+
 #sole .introdright>p{
     text-align: center;
 }
@@ -225,28 +291,28 @@
     margin-bottom: 16px;
     line-height: 16px;
 }
-#sole .High{
+/* #sole .High{
     margin-right: 70px;
-}
+} */
 #sole .High>p:first-child{
     width: 105px;
-    height: 80px;
+    height: 60px;
     font-size: 50px;
     color: #f8380c;
-    margin-right: 70px;
+    margin-right: 65px;
 }
 
-#sole .rate>div:nth-child(4)>p{
+#sole .rate>div:nth-child(4) p{
     height: 16px;
     line-height: 16px;
 }
 #sole .High>p:last-child{
-    margin-left: 45px;
+    margin-left: 32px;
 }
 #sole .percen{
-    margin-right: 40px;
+    margin-right: 5px;
 }
-#sole .progress>p{
+#sole .progress p{
     width: 150px;
     height: 16px;
     background: #e6e6e6;
@@ -263,11 +329,103 @@
     height: 16px;
     background: red;
 }
-#sole .comment>p{
+#sole .comment p {
+    width: 145px;
     margin-bottom: 16px;
 }
-#sole .com>p{
+#sole .com p {
+    width: 145px;
     margin-bottom: 16px;
+}
+#sole .appraise {
+    width: 856px;
+    height: 30px;
+    margin-top: 115px;
+    background: #f5f5f5;
+    line-height: 30px;
+    text-indent: 20px;
+}
+#sole .appraise p {
+    float: left;
+    margin-right: 16px;
+}
+
+/* 金牌会员 */
+#sole .ullist{
+    margin-top: 20px;
+    border-bottom: 2px solid #f2f2f2;
+    width: 856px;
+    height: 126px;
+}
+#sole .ullist .star{
+    margin-top: 10px;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+#sole .ullist .star p {
+    font-size: 14px;
+    color: #a6a6a6;
+    line-height: 20px;
+}
+#sole .ullist .star p img{
+    width: 20px;
+    height: 20px;
+    margin-bottom: 5px;
+}
+#sole .ullist .star-box{
+    width: 462px;
+    margin-top: 20px;
+}
+#sole .ullist .avatar{
+    margin-top: 10px;
+    margin-left: 40px;
+}
+#sole .ullist .avatar>p>img{
+    width: 30px;
+    height: 30px;
+}
+#sole .ullist .avatar>p:nth-child(2){
+    color: #f4b212;
+}
+/* #sole .ullist .introdright .intro-box{
+    display: none;
+} */
+#sole .ullist .introdright .intro-box.cur{
+    display: block;
+}
+/* #sole .ullist .introdright .evaluate{
+    display: none;
+} */
+
+/* 换页 */
+#sole .page {
+    width: 380px;
+    height: 32px;
+    line-height: 32px;
+    margin-top: 25px;
+}
+#sole .page div {
+    float: left;
+    width: 32px;
+    height: 32px;
+    margin-left: 8px;
+    border: 1px solid #e5e5e5;
+}
+#sole .page div a {
+    color: #666;
+}
+#sole .page div:first-child a{
+    color: red;
+}
+#sole .page div:first-child {
+    border: 0;
+}
+#sole .page div:nth-child(7) {
+    border: 0;
+}
+#sole .page div:last-child {
+    width: 64px;
+    height: 32px;
 }
 /* 页尾 */
 #footer .com-title {
