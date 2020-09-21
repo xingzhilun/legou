@@ -13,6 +13,23 @@ zh.addEventListener('click',function(){
     loginTabList.style.display = 'none';
 })
 
+// 扫码登陆交互效果
+let shao = document.querySelector('.shao');
+let erv = document.querySelector('.erv');
+erv.addEventListener('mouseenter',function(){
+    shao.style.display = 'block';
+    erv.style.left = 30 + 'px';
+})
+erv.addEventListener('mouseleave',function(){
+    shao.style.display = 'none';
+    erv.style.left = 100 + 'px';
+    // startMove(erv,{
+    //     left:100
+    // },500,'easeOut');
+})
+
+
+
 
 
 let loginBtn = document.querySelector('#loginBox');

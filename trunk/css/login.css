@@ -42,17 +42,35 @@
     height: 500px;
     background: url(../images/背景11.jpg)no-repeat;
 }
-#loginBox .btn>p{
+#loginBox .btn p{
     font-size: 20px;
 }
-#loginBox .btn>p.active{
+#loginBox .btn p.active{
     color: #f60;
     font-weight: bold;
 }
 #loginBox .box-list{
     margin-top: 80px;
 }
-
+#loginBox .box-list .shao {
+    display: none;
+    position: absolute;
+    top: 11px;
+    left: 197px;
+}
+#loginBox .box-list {
+    position: relative;
+}
+#loginBox .box-list .erv {
+    position: absolute;
+    top: 24px;
+    left: 104px;
+}
+#loginBox .box-list .txt {
+    position: absolute;
+    top: 200px;
+    left: 90px;
+}
 #loginBox>div>div{
     position: relative;
 }
@@ -74,6 +92,7 @@
 #loginBox .loginBtn {
     display: none;
 }
+
 #loginBox .loginBtn>p:first-child,p:nth-child(2){
     text-align: center;
 }
@@ -107,13 +126,17 @@
 }
 #loginBox .loginBtn>p:first-child>input{
     width: 280px;
-    height: 40px;
+    height: 38px;
     padding-left: 10px;
+    background: url(../images/用户.png)no-repeat;
+    text-indent: 30px;
 }
 #loginBox .loginBtn>p:nth-child(2)>input{
     width: 280px;
-    height: 40px;
+    height: 38px;
     padding-left: 10px;
+    background: url(../images/密码.png)no-repeat;
+    text-indent: 30px;
 }
 #loginbox p{
     margin-bottom: 40px;

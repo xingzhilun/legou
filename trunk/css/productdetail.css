@@ -281,6 +281,18 @@
     background: #f60;
     color: #fff;
 }
+#sole .avatar>p:nth-child(2){
+    color: #f4b212;
+}
+#sole .introdright .intro-box{
+    display: block;
+}
+#sole .introdright .intro-box.cur{
+    display: none;
+}
+#sole .introdright .evaluate{
+    display: block;
+}
 /* 评价 */
 
 #sole .introdright>p{
@@ -291,9 +303,7 @@
     margin-bottom: 16px;
     line-height: 16px;
 }
-/* #sole .High{
-    margin-right: 70px;
-} */
+
 #sole .High>p:first-child{
     width: 105px;
     height: 60px;
@@ -387,15 +397,15 @@
 #sole .ullist .avatar>p:nth-child(2){
     color: #f4b212;
 }
-/* #sole .ullist .introdright .intro-box{
+#sole .ullist .introdright .intro-box{
     display: none;
-} */
+}
 #sole .ullist .introdright .intro-box.cur{
     display: block;
 }
-/* #sole .ullist .introdright .evaluate{
+#sole .ullist .introdright .evaluate{
     display: none;
-} */
+}
 
 /* 换页 */
 #sole .page {
