@@ -172,5 +172,43 @@ eyeImg.addEventListener('click',function(){
   eyeFlag = !eyeFlag;
 })
 
+// 提交禁用
+let $submit = $('.submit');
+$('#checkbox').click(function(){
+  let bool = $(this).prop('checked');
+  console.log(bool);
+  if(bool) {
+    $submit.prop('disabled',false)
+    $submit.addClass('bgcf60').removeClass('bgf5')
+    // alert(1)  
+  }else{
+    $submit.prop('disabled',true)
+    $submit.addClass('bgf5').removeClass('bgcf60')
+  }
+})
 
-
+// 验证码
+$(function() {
+  code_draw();
+  // 点击后刷新验证码
+  $("#canvas").on('click', function() {
+    code_draw();
+  })
+  
+  $(".submit").on('click', function() {
+    // 将输入的内容转为大写，可通过这步进行大小写验证
+    var val = $(".input-val").val().toLowerCase();
+    // 获取生成验证码值
+    var num = $('#canvas').attr('data-code');
+    if (val == '') {
+      alert('请输入验证码！');
+    } else if (val == num) {
+      alert('提交成功！');
+      $(".input-val").val('');
+  
+    } else {
+      alert('验证码错误！请重新输入！');
+      $(".input-val").val('');
+    }
+  })
+})

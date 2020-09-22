@@ -25,33 +25,27 @@ lunbo('#childcloth .ebookSlid',342,430,342)
 $("#ebook .book ul li").mouseenter(function(){
     $(this).addClass("active").siblings().removeClass("active")
     let index = $(this).index();
-    // $("#ebook .ebook-left .con").eq(index).addClass("cur").siblings().removeClass("cur")
-    let re=$("#ebook .book .con").eq(index).show().siblings(".con").hide();
-    console.log(re);
+    $("#ebook .rightcbox ul").eq(index).addClass("cur").siblings().removeClass("cur")
 })
 // 服装模块选项卡
 $("#cloth .dress ul li").mouseenter(function(){
     $(this).addClass("active").siblings().removeClass("active")
     let index = $(this).index();
-    // $("#ebook .ebook-left .con").eq(index).addClass("cur").siblings().removeClass("cur")
-    let re=$("#cloth .book .con").eq(index).show().siblings(".con").hide();
-    console.log(re);
+    $("#cloth .rightcbox ul").eq(index).addClass("cur").siblings().removeClass("cur")
 })
 // 户外运动模块选项卡
 $("#sport .dress ul li").mouseenter(function(){
     $(this).addClass("active").siblings().removeClass("active")
     let index = $(this).index();
-    // $("#ebook .ebook-left .con").eq(index).addClass("cur").siblings().removeClass("cur")
-    let re=$("#sport .book .con").eq(index).show().siblings(".con").hide();
-    console.log(re);
+    $("#sport .rightcbox ul").eq(index).addClass("cur").siblings().removeClass("cur")
+    
 })
 // 童装模块选项卡
 $("#childcloth .dress ul li").mouseenter(function(){
     $(this).addClass("active").siblings().removeClass("active")
     let index = $(this).index();
-    // $("#ebook .ebook-left .con").eq(index).addClass("cur").siblings().removeClass("cur")
-    let re=$("#childcloth .book .con").eq(index).show().siblings(".con").hide();
-    console.log(re);
+    $("#childcloth .rightcbox ul").eq(index).addClass("cur").siblings().removeClass("cur")
+    
 })
 // /* 新书畅销榜
     //   鼠标移入：显示当前的div 

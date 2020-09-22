@@ -40,7 +40,7 @@
 #loginBox{
     width: 100%;
     height: 500px;
-    background: url(../images/背景11.jpg)no-repeat;
+    background: url(../images/bj11.jpg)no-repeat 0px 0px;
 }
 #loginBox .btn p{
     font-size: 20px;
@@ -120,7 +120,7 @@
 }
 #loginBox .loginBtn>p:last-child>a{
     color: orangered;
-    background: url(../images/去往注册.png)no-repeat 0px -1px;
+    background: url(../images/register1.png)no-repeat 0px -1px;
     padding-left: 20px;
     line-height: 50px;
 }
@@ -128,14 +128,14 @@
     width: 280px;
     height: 38px;
     padding-left: 10px;
-    background: url(../images/用户.png)no-repeat;
+    background: url(../images/user.png)no-repeat;
     text-indent: 30px;
 }
 #loginBox .loginBtn>p:nth-child(2)>input{
     width: 280px;
     height: 38px;
     padding-left: 10px;
-    background: url(../images/密码.png)no-repeat;
+    background: url(../images/password.png)no-repeat;
     text-indent: 30px;
 }
 #loginbox p{
@@ -173,6 +173,7 @@
     right: 210px;
     top: 188px;
 }
+
 /* 页脚 */
 #footer {
     width: 900px;

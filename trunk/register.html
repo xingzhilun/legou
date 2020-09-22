@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>注册页面</title>
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/register.css">
     <link rel="stylesheet" href="./css/common.css">
@@ -59,8 +59,10 @@
             </p>
             <p>
                 <b for="verification">验证码</b>
-                <input id="verification" name="verification" type="text" placeholder="请输入验证码" >
-                <i>W8GA</i>
+                <!-- <input id="verification" name="verification" type="text" placeholder="请输入验证码" > -->
+                
+<input type="text" value="" placeholder="请输入验证码" class="input-val" />
+<i><canvas id="canvas" width="100" height="43"></canvas></i>
             </p>
               <p>
                 <b for="phone_code">手机验证码</b>
@@ -72,7 +74,7 @@
             <span>我已阅读并同意<a href="#" class="cf60">《京东用户注册协议》</a></span>
             </p>
               <p>
-                <input class="submit cfff bgcf60 " type="submit" value="立即注册" style="text-indent: 0;">
+                <input class="submit cfff bgf5 " type="submit" value="立即注册" style="text-indent: 0;" disabled>
               </p>
         </form>
     </div></div>
@@ -98,12 +100,13 @@
                 <li><a href="#">热词搜索</a></li>
             </ul>
         </div>
-        <div class="copyright container tac  mb40">
+        <div class="copyright container mt20 tac  mb40">
             <p>Copyright (C) 乐购网 2004-2016, All Rights Reserved</p>
         </div>
     </section>
     <!-- 1. 引入jQuery -->
     <script src="./lib/jquery.min.js"></script>
+    <script src="./js/code.js"></script>
 
     <!-- 2. 引入轮播插件 -->
     <script src="./lib/jquery.slidebox.js"></script>
